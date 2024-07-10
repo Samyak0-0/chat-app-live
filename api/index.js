@@ -38,7 +38,7 @@ const bcryptSalt = bcrypt.genSaltSync(10);
 app.use(
   cors({
     credentials: true,
-    origin: process.env.CLIENT_URL,
+    origin: "https://chat-app-gamma-puce.vercel.app",
   })
 );
 
