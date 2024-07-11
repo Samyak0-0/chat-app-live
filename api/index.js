@@ -39,6 +39,7 @@ app.use(
   cors({
     origin: "https://chat-app-live-snowy.vercel.app",
     credentials: true,
+    methods: "GET,PUT,POST,DELETE",
   })
 );
 
