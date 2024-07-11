@@ -37,7 +37,7 @@ const bcryptSalt = bcrypt.genSaltSync(10);
 
 app.use(
   cors({
-    origin: "https://chat-app-live-snowy.vercel.app",
+    origin: ["https://chat-app-live-snowy.vercel.app", process.env.CLIENT_URL],
     credentials: true,
     methods: "GET,PUT,POST,DELETE",
   })
