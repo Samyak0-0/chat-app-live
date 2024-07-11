@@ -37,8 +37,8 @@ const bcryptSalt = bcrypt.genSaltSync(10);
 
 app.use(
   cors({
-    credentials: true,
     origin: "*",
+    credentials: true,
   })
 );
 
